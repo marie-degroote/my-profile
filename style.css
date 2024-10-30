@@ -1,0 +1,124 @@
+/* Style général */
+body {
+    background-color: #E3E1D9;
+    font-family: "Lexend Deca", sans-serif;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    color: black;
+    font-weight: 700;
+}
+
+.container {
+    width: 700px;
+    margin: 40px auto;
+}
+
+@media(max-width: 760px) {
+    .container {
+        width: 600px;
+    }
+}
+
+@media(max-width: 500px) {
+    .container {
+        width: 400px;
+    }
+}
+
+.box-white {
+    background: white;
+    padding: 40px;
+    margin: 20px 0;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn-rose {
+    background-color: lightpink;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.list-horizontal {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-horizontal li {
+    display: inline;
+    padding: 10px;
+}
+
+.list-horizontal a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list-horizontal i {
+    font-size: 50px;
+    color: lightpink;
+}
+
+.list-horizontal i:hover {
+    color: black;
+}
+
+#linkedin p {
+    margin: 40px;
+}
+
+/* Icône de basculement de thème */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.theme-toggle i:hover {
+    color: #000;
+}
+
+/* Thème sombre */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #e3e1d9;
+}
+
+body.dark-mode .box-white {
+    background: #333;
+    color: #e3e1d9;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+body.dark-mode .btn-rose {
+    background-color: #444;
+    color: #e3e1d9;
+}
+
+body.dark-mode .list-horizontal i {
+    color: #888;
+}
+
+body.dark-mode .list-horizontal i:hover {
+    color: #e3e1d9;
+}
+
+.img-ronde {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: block;
+}

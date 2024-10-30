@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marie De Groote's Profile</title>
+    <script src="https://kit.fontawesome.com/0adde9dbf8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Lexend+Deca:wght@100..900&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- Icône pour basculer le thème -->
+    <div class="theme-toggle">
+        <i class="fa-solid fa-moon" id="theme-icon"></i>
+    </div>
+
+    <div class="container">
+        <div class="box-white">
+            <h1>Hi, I'm Marie De Groote :)</h1>
+            <p>I'm currently enrolled in the Grande Ecole program at the IESEG school of management and in a bachelor's degree in eco-management at the CYU faculty, and I'm a dynamic, motivated young woman. I'm passionate about jewelry and perfumery. And I dream of traveling around the world to discover new cultures and landscapes.</p>
+            <img src="images/profile-picture.png" alt="Marie De Groote" class="img-ronde">
+        </div>
+
+        <div class="box-white">
+            <h2>TRAVEL</h2>
+            <p>I love to travel. My favorite trip was to Mexico. As much for its beautiful landscapes as for its cultural richness, Mexico has left its mark on me. I had the opportunity to meet some very nice people. That's why traveling is so important to me. It's a way of opening up to the world.</p>
+        </div>
+
+        <div class="box-white">
+            <h2>JEWELRY AND PERFUMERY</h2>
+            <p>For me, jewelry and perfumery are very special arts. They embody delicacy and precision. Each piece of jewelry and each fragrance is the result of meticulous craftsmanship, where creativity meets technique. I appreciate the way these creations embody luxury, capturing the essence of elegance and emotion, while revealing a timeless beauty.</p>
+        </div>
+
+        <div class="box-white" id="linkedin">
+            <h2>LINKEDIN PROFILE</h2>
+            <p>If you'd like to follow my progress, have access to my CV, or take a look at my career path, please click on the link below, which will take you directly to my LinkedIn profile.</p>
+            <a href="https://www.linkedin.com/in/marie-de-groote-82430226b/" class="btn-rose" target="_blank">Discover my LinkedIn page</a>
+        </div>
+
+        <div class="box-white">
+            <h2>FOLLOW ME</h2>
+            <ul class="list-horizontal">
+                <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- JavaScript pour le basculement de thème -->
+    <script>
+        const themeIcon = document.getElementById("theme-icon");
+        themeIcon.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+
+            // Change l'icône entre lune et soleil
+            if (document.body.classList.contains("dark-mode")) {
+                themeIcon.classList.replace("fa-moon", "fa-sun");
+            } else {
+                themeIcon.classList.replace("fa-sun", "fa-moon");
+            }
+        });
+    </script>
+</body>
+</html>
